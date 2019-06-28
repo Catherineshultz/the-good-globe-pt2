@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Good News</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+  </head>  
+  <body>
+ <div>
+  <center> <h1 class="title"> The Good Globe</h1> </center>   
+  
+<div class="topnav">
+   <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="videos.html">Videos</a>
+  <a href="submission.html">Submission</a>
+  <a href="help.html">How To Help</a>
+  <a href="about.html">About Us</a> 
+   </div>
+   
+   <center><h1>
+     Good Mood Video Generator!
+     </h1> </center>
+   <center> <button id="vidbutton"> Click Here for a Video!</button> </center>
+
+   <center><iframe id= "video" width="560" height="315" src="https://www.youtube.com/embed/d9QoK8L1YWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+   <script>
+   var video = ["https://www.youtube.com/embed/TVqly9G2P9A", 
+                "https://www.youtube.com/embed/X99Pwxt2coY", 
+                "https://www.youtube.com/embed/0TYyBtb1PH4",
+               "https://www.youtube.com/embed/2HubIBlnvko",
+               "https://www.youtube.com/embed/GFzOiX4XlA4",
+               "https://www.youtube.com/embed/iKkr1tPm5eU",
+                "https://www.youtube.com/embed/JtGsdiYdObQ",
+                "https://www.youtube.com/embed/OS9uhASKyjA",
+                "https://www.youtube.com/embed/nBOcfx0eHd8",
+                "https://www.youtube.com/embed/uRgJ-22S_Rs"
+               ]
+                
+
+
+var button = document.getElementById("vidbutton");
+button.addEventListener ("click" , function(){
+document.getElementById("video").src = (video[Math.floor(Math.random() * video.length )]);
+  });
+     
+    
+   </script>
+   
+   
+    </div> 
+   </body>
+</html>
